@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>Eduford</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;0,500;1,500&family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+  <section class="sub-header">
+   <nav>
+       <a href="index.html"><img src="logo.png"></a>
+       <div class="nav-links" id="navLinks">
+        <i class="fa fa-times" onclick="hideMenu()"></i>
+         <ul>
+           <li><a href="index.html">HOME</a></li>
+           <li><a href="about.html">ABOUT</a></li>
+           <li><a href="course.html">COURSE</a></li>
+           <li><a href="blog.html">BLOG</a></li>
+           <li><a href="contact.html">CONTACT</a></li>
+         </ul>
+       </div>
+       <i class="fa fa-bars" onclick="showMenu()"></i>
+   </nav>
+<h1> Contact Us</h1>
+  </section>
+
+  <section class="location">
+    <iframe src="https://www.google.com/maps/d/embed?mid=16ibJhEcFC5GVPBH-tUZaZJOSmv4&ehbc=2E312F" width="640" height="480"></iframe>
+
+
+  </section>
+
+
+  <section class="contact-us">
+    <div class="row">
+      <div class="contact-col">
+        <div>
+          <i class="fa fa-home"></i>
+          <span>
+            <h5>XYZ Road, ABC Building</h5>
+            <p>Redwood city, Canada</p>
+          </span>
+
+        </div>
+
+      
+      <div>
+        <i class="fa fa-phone"></i>
+        <span>
+          <h5>+1 0123456789</h5>
+          <p>Monday to Saturday, 10AM to 7PM</p>
+        </span>
+
+      </div>
+      <div>
+        <i class="fa fa-envelope-o"></i>
+        <span>
+          <h5>info@easytuturial.com</h5>
+          <p>E-mail us for query</p>
+        </span>
+
+      </div>
+
+    </div>
+
+      <div class="contact-call">
+        <from action="from_handeler.php" method="post">
+          <input type="text" name="name" placeholder="Enter your name" required>
+          <input type="Email" name="Email" placeholder="Enter Email address" required>
+          <input type="text" name="subject" placeholder="Enter your subject" required>
+          <textarea rows="8" name="Message" placeholder="Message" required></textarea>
+          <button type="submit" class="hero-btn red-btn">Send Message</button>
+
+
+        </from>
+
+
+
+      </div>
+
+
+
+
+    </div>
+
+
+  </section>
+  
+  
+
+ 
+
+
+
+  <section class="footer">
+    <h4>About Us</h4>
+    <p>When it comes to education, Eduford offers you formal degree in various domains of your choice ranging from Engineering, <br>Management, Healthcare, Hospitality & Technology.
+      At Eduford, we offer formal degree courses and along with each course of one’s choice, <br>one gets value added certificates. <br>These certifications help our students to hone their craft, give them a professional edge and positively impact their learning. Our Value Additions help to:
+      Build up foundational skills.</p>
+      <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+      </div>
+  </section>
+<script>
+  var navLinks=document.getElementById("navLinks");
+  function showMenu(){
+    navLinks.style.right="0";
+  }
+  function hideMenu(){
+    navLinks.style.right="-200px";
+  }
+</script>
+</body>
+</html>
